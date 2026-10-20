@@ -1,0 +1,65 @@
+{
+  "name": "genpark-personal-agent-slow-wave-sleep-delta-power-enhancer-skill",
+  "version": "1.0.0",
+  "title": "Slow-Wave Sleep Delta Power & Glymphatic Clearance Enhancer Skill",
+  "description": "Nocturnal EEG delta wave (0.5\u20134.0 Hz) power spectrum telemetry estimation, sleep spindle density tracking, thermal bedroom cycle dispatch, and acoustic pink noise stimulation synthesizer. Built for GenPark (https://www.genpark.ai).",
+  "homepage": "https://www.genpark.ai",
+  "linkedin": "https://www.linkedin.com/company/92955550",
+  "category": "personal-agent",
+  "topics": [
+    "slow-wave-sleep",
+    "delta-power",
+    "glymphatic-clearance",
+    "deep-sleep",
+    "biohacking",
+    "personal-agent",
+    "model-context-protocol",
+    "genpark"
+  ],
+  "tools": [
+    {
+      "name": "audit_deep_sleep_delta_power",
+      "description": "Analyze wearable slow-wave sleep duration and nocturnal delta power percentage against clinical glymphatic waste clearance benchmarks.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "total_sleep_time_minutes": {
+            "type": "integer"
+          },
+          "slow_wave_sleep_minutes": {
+            "type": "integer"
+          },
+          "awakenings_count": {
+            "type": "integer"
+          },
+          "average_resting_hr_bpm": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "total_sleep_time_minutes",
+          "slow_wave_sleep_minutes",
+          "awakenings_count"
+        ]
+      }
+    },
+    {
+      "name": "generate_thermal_and_acoustic_sws_protocol",
+      "description": "Generate dynamic smart bedroom thermostat cooling curve (66\u00b0F to 64\u00b0F) and 1/f pink noise auditory stimulation cadence.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "target_deep_sleep_boost_pct": {
+            "type": "number"
+          },
+          "bedtime_hour_24h": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "bedtime_hour_24h"
+        ]
+      }
+    }
+  ]
+}
